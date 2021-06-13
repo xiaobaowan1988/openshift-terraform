@@ -1,10 +1,10 @@
 variable "bastion_key_path" {
   description = "My public ssh key"
-   default = "~/.ssh/id_rsa.pub"
+  default = "~/.ssh/id_rsa.pub"
 }
 variable "openshift_key_path" {
   description = "My public ssh key"
-   default = "./helper_scripts/id_rsa.pub"
+  default = "./helper_scripts/id_rsa.pub"
 }
 variable "bastion_key_name" {
   description = "Desired name of AWS key pair"
@@ -24,7 +24,7 @@ variable "aws_amis" {
   }
 }
 variable "vpc_cidr" {
-    default = "10.0.0.0/20"
+  default = "10.0.0.0/20"
   description = "the vpc cdir range"
 }
 variable "public_subnet_a" {
